@@ -27,10 +27,17 @@ body .bottom_bar{
     color: #333;
     max-width: 95px;
     text-align: center;
-    white-space: normal; 
-    word-break: normal;
-   
+    white-space: normal;
 }
+
+.top-buttons button span {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 
 .icon-circle {
