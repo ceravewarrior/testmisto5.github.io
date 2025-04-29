@@ -42,11 +42,10 @@ body .bottom_bar{
     object-fit: contain;
 }
 
-
-
 .container {
     max-width: 400px;
     margin: auto;
+    margin-top: 100px;
 }
 
 
