@@ -6,7 +6,9 @@ body .bottom_bar{
 .top-buttons {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-bottom: 20px;
     margin-top: 30px;
 
@@ -23,7 +25,7 @@ body .bottom_bar{
     gap: 8px;
     font-size: 12px;
     color: #333;
-    max-width: 90px;
+    max-width: 95px;
     text-align: center;
     white-space: normal; 
     word-break: normal;
@@ -79,11 +81,11 @@ body .bottom_bar{
 }
 
 .title_text{
-    font-size: 18px;
+    font-size: 19px;
     color: #3b3c41;
     text-align: center;
     width: 100%;
-    font-weight: bold;
+    font-weight: 550; 
     margin-top: auto;
     margin-bottom: auto;
     height: max-content;
