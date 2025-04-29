@@ -6,11 +6,9 @@ body .bottom_bar{
 .top-buttons {
     display: flex;
     justify-content: center;
-    gap: 25px;
-    margin-left: 8px;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    align-items: stretch;
+    gap: 35px;
+    margin: 30px 8px 30px;
+    flex-wrap: nowrap
 }
 
 .top-buttons button {
@@ -19,36 +17,23 @@ body .bottom_bar{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     cursor: pointer;
-    gap: 5px;
     font-size: 12px;
     color: #3b3b3b;
-    max-width: 120px;
+    width: 70px; 
     text-align: center;
-    white-space: normal;
-    height: 100%;
 }
-
-.top-buttons button span {
-    overflow: hidden;
-    text-align: center;
-    display: block;   
-}
-
-
-
-
 
 .icon-circle {
-    background: white;
-    border-radius: 45%;
     width: 60px;
-    height: 60px;
+    aspect-ratio: 1 / 1; 
+    background: white;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
 }
 
 .icon-circle img {
@@ -56,6 +41,8 @@ body .bottom_bar{
     height: 30px;
     object-fit: contain;
 }
+
+
 
 .container {
     max-width: 400px;
