@@ -38,24 +38,20 @@
 }
 
 .card-container {
-    display: flex;
-    overflow-x: auto;
-    padding: 10px;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    justify-content: flex-start;  /* Wyrównanie kart do lewej strony */
-    gap: 5px;  /* Zmniejszony odstęp */
-}
-
-.card {
-    flex-shrink: 0;
-    height: 230px;
-    width: 310px;  /* Zmniejszenie szerokości kart */
-    background-color: white;
-    border-radius: 15px;
+    white-space: nowrap;
+    overflow-x: hidden;
+  }
+.card{
+    display: inline-block;
     position: relative;
-    margin: 0;  /* Usunięcie marginesów */
     overflow: hidden;
+    border-radius: 15px;
+    height: 230px;
+    width: 370px;
+    background-color: white;
+    white-space: nowrap;
+    margin-right: 10px
+
 }
 
 .background {
