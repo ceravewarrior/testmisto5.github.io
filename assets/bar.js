@@ -20,7 +20,7 @@ cardContainer.addEventListener('mousemove', (e) => {
   if (!startX) return;
   e.preventDefault();
   const x = e.pageX - cardContainer.offsetLeft;
-  const walk = (x - startX) * 5; // Przyspiesza przewijanie
+  const walk = (x - startX) * 2; // Przyspiesza przewijanie
   cardContainer.scrollLeft = scrollLeft - walk;
 });
 
@@ -34,7 +34,7 @@ cardContainer.addEventListener('touchmove', (e) => {
   if (!startX) return;
   e.preventDefault();
   const x = e.touches[0].pageX - cardContainer.offsetLeft;
-  const walk = (x - startX) * 5; // Przyspiesza przewijanie
+  const walk = (x - startX) * 2; // Przyspiesza przewijanie
   cardContainer.scrollLeft = scrollLeft - walk;
 });
 
