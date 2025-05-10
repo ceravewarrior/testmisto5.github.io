@@ -5,16 +5,16 @@ html{
 }
 
 :root{
-    --home: url('https://i.imgur.com/5diJrXi.png');
-    --home-open: url('https://i.imgur.com/sdQYjBt.png');
-    --documents: url('https://i.imgur.com/28v1TEk.png');
-    --documents-open: url('https://i.imgur.com/ZHx3VDs.png');
-    --services: url('https://i.imgur.com/OxfOAfO.png');
-    --services-open: url('https://i.imgur.com/3V2f5uA.png');
-    --qr: url('https://i.imgur.com/M9MhD3N.png');
-    --qr-open: url('https://i.imgur.com/vmr8YVg.png');
-    --more: url('https://i.imgur.com/V5SoHXM.png');
-    --more-open: url('https://i.imgur.com/e9rnYLl.png');
+    --home: url('https://i.imgur.com/5AuBVtI.png');
+    --home-open: url('https://i.imgur.com/r4IvdeF.png');
+    --documents: url('https://i.imgur.com/Ov28V0h.png');
+    --documents-open: url('https://i.imgur.com/wJhdU5b.png');
+    --services: url('https://i.imgur.com/zjgDhTt.png');
+    --services-open: url('https://i.imgur.com/HfUDjf9.png');
+    --qr: url('https://i.imgur.com/CcnsYpb.png');
+    --qr-open: url('https://i.imgur.com/UX5kcJ9.png');
+    --more: url('https://i.imgur.com/u2noSzm.png');
+    --more-open: url('https://i.imgur.com/m8C8ZSA.png');
     --text: #024b97;
     --shadow: 0px 0px 10px rgb(224, 224, 224);
 }
