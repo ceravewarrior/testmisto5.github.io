@@ -23,28 +23,42 @@ var time = document.getElementById("time");
 var options = { year: 'numeric', month: 'numeric', day: '2-digit' };
 var optionsTime = { second: 'numeric', minute: 'numeric', hour: '2-digit' };
 
+// Ustawienie daty aktualizacji, jeśli nie została wcześniej ustawiona
 if (localStorage.getItem("update") == null){
   localStorage.setItem("update", "24.12.2024")
 }
 
 var date = new Date();
 
+// Wybieramy element, który będzie wyświetlał datę aktualizacji
 var updateText = document.querySelector(".bottom_update_value");
 updateText.innerHTML = localStorage.getItem("update");
 
+// Przycisk aktualizacji
 var update = document.querySelector(".update");
+
+// Nasłuchiwanie kliknięcia w przycisk "Aktualizuj"
 update.addEventListener('click', () => {
-  var newDate = date.toLocaleDateString("pl-PL", options);
-  localStorage.setItem("update", newDate);
+  // Pobranie aktualnej daty
+  var currentDate = new Date();
+  var newDate = currentDate.toLocaleDateString("pl-PL", options);
+
+  // Zaktualizowanie daty w elemencie
   updateText.innerHTML = newDate;
 
-  scroll(0, 0)
+  // Zapisanie nowej daty do localStorage
+  localStorage.setItem("update", newDate);
+
+  // Opcjonalnie – przewiń stronę na górę po kliknięciu
+  scroll(0, 0);
 });
 
+// Funkcja opóźnienia (niewykorzystana w kodzie, ale może być przydatna)
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
 
+// Funkcja ustawia zegar
 setClock();
 function setClock(){
     date = new Date();
@@ -54,6 +68,7 @@ function setClock(){
     })
 }
 
+// Rozwijany panel z dodatkowymi informacjami
 var unfold = document.querySelector(".info_holder");
 unfold.addEventListener('click', () => {
 
@@ -65,6 +80,7 @@ unfold.addEventListener('click', () => {
 
 })
 
+// Pobieranie parametrów URL
 var data = {}
 
 var params = new URLSearchParams(window.location.search);
@@ -72,6 +88,7 @@ for (var key of params.keys()){
   data[key] = params.get(key);
 }
 
+// Ustawianie obrazka na podstawie danych z URL
 document.querySelector(".id_own_image").style.backgroundImage = `url(${data['image']})`;
 
 var birthday = data['birthday'];
@@ -120,7 +137,7 @@ if (localStorage.getItem("homeDate") == null){
   localStorage.setItem("homeDate", homeDate.toLocaleDateString("pl-PL", options))
 }
 
-document.querySelector(".home_date").innerHTML = localStorage.getItem("homeDate")
+document.querySelector(".home_date").innerHTML = localStorage.getItem("homeDate");
 
 if (parseInt(year) >= 2000){
   month = 20 + month;
@@ -143,15 +160,12 @@ if (month < 10){
 }
 
 var pesel = year.toString().substring(2) + month + day + later + "7";
-setData("pesel", pesel)
+setData("pesel", pesel);
 
 function setData(id, value){
-
   document.getElementById(id).innerHTML = value;
-
 }
 
 function getRandom(min, max) {
   return parseInt(Math.random() * (max - min) + min);
 }
-
