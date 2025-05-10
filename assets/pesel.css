@@ -82,7 +82,7 @@ body {
   
 
   .icon-circle {
-    width: 75px;
+    width: 100px;
     aspect-ratio: 1 / 1; 
     background: #d3d2ef;
     border-radius: 50%;
@@ -94,16 +94,16 @@ body {
 
 
   .icon-circle img {
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
-    margin-top: 16px;
-    margin-left: 14.5px;
+    margin-top: 22px;
+    margin-left: 20.2px;
 
 }
   
   .title {
-    font-size: 30px;
+    font-size: 39px;
     font-weight: bold;
     margin-bottom: 8px;
     text-align: left;
@@ -111,7 +111,7 @@ body {
   }
   
   .subtitle {
-    font-size: 15px;
+    font-size: 22px;
     color: #5c5c5c;
     text-align: left;
     margin-bottom: 24px;
@@ -126,7 +126,7 @@ body {
   
   .button {
     background-color: #ffffff;
-    padding: 16px;
+    padding: 25px;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
@@ -137,6 +137,7 @@ body {
   
   .button span {
     font-weight: bold;
+    font-size: 22px;
   }
   
   .button .action {
@@ -145,7 +146,7 @@ body {
     border-radius: 20px;
     color: #014a93;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 16px;
   }
   
   .section {
@@ -157,7 +158,8 @@ body {
   
   .section-item {
     position: relative;
-    padding: 16px 20px;
+    padding: 30px 20px;
+    font-size: 18px;
   }
   
   .section-item::after {
